@@ -5,4 +5,6 @@ Usage:
 
 Copy the plist files into ~/Library/Application Support/BBEdit/Language Modules/
 
-Add a suffix mapping in BBEdit Preferences-> Languages
+Add a suffix mapping in BBEdit Preferences-> Languages  
+
+![](BBEdit-Stuff/Codeless-Language-Modules/Slim/screenshot.jpg)

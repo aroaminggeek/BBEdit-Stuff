@@ -1,2 +1,1 @@
-ReST Preview
-############
+## ReST Preview

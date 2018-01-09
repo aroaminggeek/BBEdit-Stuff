@@ -8,9 +8,9 @@
 <string>CodelessLanguageModule</string>
 <!-- You must identify your language: -->
 <key>BBLMLanguageDisplayName</key>
-<string>My Language</string>
+<string>Magic Python</string>
 <key>BBLMLanguageCode</key>
-<string>MyL!</string>
+<string>MaPy</string>
 <!-- Not required, but there’s not much point to a language module if it doesn’t color syntax: -->
 <key>BBLMColorsSyntax</key>
 <true/>
@@ -71,8 +71,8 @@
       <string>?</string>
       <string>^</string>
 	  </array>
-	<key>BBLMPredefinedNameList</key>
-	<array>
+<key>BBLMPredefinedNameList</key>
+<array>
 	    <string>abs</string>
 	    <string>all</string>
 	    <string>any</string>
@@ -560,39 +560,7 @@
 <key>Language Features</key>
 <dict>
 <key>Identifier and Keyword Character Class</key>
-    <string><![CDATA[!$%&*+-.,/()<?>^={}[]'"@~#0-9A-Z_a-z:]]></string>
-    <key>Comment Pattern</key>
-    <string><![CDATA[(?x:
-              (#.*$) | (?# Line comment)
-              )]]></string>
-    <key>String Pattern</key>
-      <string><![CDATA[("(\\"|[^"\r]|\\\r)*") | (?# Double-quote)
-      ('(\\'|[^'\r]|\\\r)*') |  (?# Single-quote)
-      ("""(\\"|[^"\r]|\\\r)*""") | (?# Triple-quote)
-        )]]></string>
-    <key>Function Pattern</key>
-          <string><![CDATA[(?P<function>
-            (^|\s)
-            (def|class|try|except|if|elif|else|)
-            \s+
-            (?P<function_name>
-              [A-Za-z_()][A-Za-z_0-9:]*
-            )
-            (
-              [^{]*
-              (?P<block> 
-                (?>
-									(?> [^{}]+ )
-								  | (?P>block) 
-								)*
-              )
-        ]]></string>
-    <key>Skip Pattern</key>
-      <string><![CDATA[
-            (?x:
-              (?P>comment) |
-                (?P>string)
-                  )]]></string>
+<string>A-Za-z0-9_\?!</string>
 </dict>
 </dict>
 </plist>
